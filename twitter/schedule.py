@@ -8,7 +8,7 @@ AS = ""
 update_url = "https://api.twitter.com/1.1/statuses/update.json"
 def tweet():
   twitter = OAuth1Session(CK, CS, AT, AS)
-  body = "試験"
+  body = "tweet!"
   params = {"status" : body}
   res = twitter.post(update_url, params = params)
   if res.status_code == 200:
